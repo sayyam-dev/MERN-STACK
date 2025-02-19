@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "name": "Amna",
+    "email": "Amna@gmail.com",
+    "age": "20",
+    "address": "PAEC"
+  },
+  {
+    "id": "2",
+    "name": "Sayyam ",
+    "email": "sayyam12@gmai.com",
+    "age": "20"
+  },
+  {
+    "id": "3",
+    "name": "AbuBakar",
+    "email": "abubakar786shahzad@gmai.com",
+    "age": "21"
+  },
+  {
+    "id": "4",
+    "name": "Alishaba",
+    "email": "Alishaba@gmai.com",
+    "age": "20"
+  },
+  {
+    "id": 5,
+    "name": "Aliyan",
+    "email": "Aliyan@gmail.com",
+    "age": "19",
+    "address": "Narali"
+  },
+  {
+    "id": 10,
+    "name": "Amna Bibi",
+    "email": "Amna@gmail.com",
+    "age": "20",
+    "address": "Nailor"
+  }
+]

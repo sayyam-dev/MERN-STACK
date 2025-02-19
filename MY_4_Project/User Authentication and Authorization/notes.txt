@@ -1,0 +1,59 @@
+
+1. Authentication (Who are you?)  
+Authentication is the process of verifying who a user is. It ensures that the person trying to access a system is actually who they claim to be.  
+
+🔹Example:  
+- When you log in to **Facebook**, you enter your **email and password**.  
+- Facebook checks if the email and password are correct.  
+- If they match, you are **authenticated** (Facebook knows it's really you).  
+
+
+2. Authorization (What can you do?)**  
+Authorization decides what a user is allowed to do **after authentication**. It determines what resources or features a user has access to.  
+
+🔹 Example:  
+  - After logging in to Facebook:  
+  - You can **post a status** (because you are authorized to do so).  
+  - But you **cannot delete someone else's account** (because you are **not authorized** for that).  
+
+
+Key Difference  
+- **Authentication = Verifying identity (Login process)**  
+- **Authorization = Checking permissions (What you can access)**  
+
+**Middleware** is a function that runs between the request and response cycle in an application.  
+
+🔹 **Use:** It helps in processing requests, such as authentication, logging, or modifying request/response data.  
+
+🔹 **Example:** In **Next.js**, middleware can restrict access to certain pages based on user authentication. 🚀
+
+
+3. Json web Token 
+
+4. Email Verification : for email verification we use nodemaler , enter we enter email while rejisteing the nodemaler send otp to email then you can verify you email.
+
+5. JWT : json web Token look like this, [header].[payload].[signature]
+. Header : Header contain important message , which methods the Token is using to create itself.
+. Payload : payload is very important , it having user data. When Token is decoded this user data is taken out , Extracted. Then we can get id and other things.
+Decoded JWT Payload
+{
+  "userId": "1234",
+  "email": "user@example.com",
+  "iat": 1693042200
+}
+. Signature : Its used for verification whos Token, and we having secret key which is creating signature.
+
+6. After login , from backend token will gernate and store in cookies local storage part of brosswor.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+. We are making User Authentication Apis
+. For secures the password we write the bcrypt; bcrypt is used to genrate hashpassword out of your normal password.
+. npm i bcrypt
+
+. Making login api , it the password match then we making the token
+. npm i jsonwebtoken , after
+  => this token will expires after 1 hour 
+        const token = jwt.sign({id : existingUser._id},process.env.JWT_SECRET_KEY ,{expiresIn : '1h'});
+        After getting token then we can verifying the token. We making function for verifying token.
+
+. Basically we making the middleware, Middleware is function which always will be called when some making requests.

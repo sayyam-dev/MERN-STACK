@@ -1,0 +1,63 @@
+----------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------> CURD API <-------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+First i run the => npm init.
+Then i install => npm install.
+Then i make the Database for user information , We make json file for store data in json form => userDatabase.json.
+Then i make folder of controllers , in which file exits UserRoutes.js in which we make create,delete,update,and read apis.
+Then we make the basic set of Express. For that we install the Express First. => npm install express
+Also install the nodemon => npm i nodemone
+
+--> Body-parser is a Node.js middleware that helps parse incoming request bodies (such as JSON or URL-encoded data) so that you can easily access the data in your route handlers. => npm install body-parser
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+// Use body-parser to parse JSON data
+app.use(bodyParser.json());
+app.post('/data', (req, res) => {
+  console.log(req.body);  // Access parsed JSON data
+  res.send('Data received');
+});
+app.listen(port,()=>{
+    console.log(`Server running on port : ${port}`);
+});
+
+
+--> CORS (Cross-Origin Resource Sharing) is a security feature that allows or blocks web pages from making requests to a different domain. It ensures that only trusted domains can access a server's resources.
+Install the CORS middleware in a Node.js app: npm install cors
+Use CORS in your Express app:
+const express = require('express');
+const cors = require('cors');
+const app = express();
+// Enable CORS for all routes
+app.use(cors());
+app.get('/data', (req, res) => {
+  res.json({ message: 'This is CORS-enabled data!' });
+});
+app.listen(port, () => {
+  console.log('Server running on port ${port}');
+});
+
+
+--> React router: React Router is a library that helps manage navigation and URLs in a React app, allowing you to switch between different pages or components without reloading the page.
+
+
+// Definning the below code
+users[userIndex] = {
+  ...users[userIndex],
+  ...updateUser
+} 
+
+Access the Specific User:
+users[userIndex]: Accesses the user object at the index userIndex in the users array.
+Spread the Existing Properties:
+
+{ ...users[userIndex] }: Creates a shallow copy of the existing user object.
+Merge Updates:
+
+{ ...updateUser }: Adds or overwrites properties from the updateUser object to the existing user object.
+Assign Back to the Array:
+
+users[userIndex] = { ... }: Updates the users array with the modified object.

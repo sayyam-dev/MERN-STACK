@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "SayyamShahid",
+    "email": "sayyam@gmail.com",
+    "age": "19",
+    "address": "chakwal"
+  },
+  {
+    "id": "3",
+    "name": "abubakar",
+    "email": "abubakar@gmail.com",
+    "age": "21",
+    "address": "lahore"
+  },
+  {
+    "id": "4",
+    "name": "ahmed",
+    "email": "ahmed@gmail.com",
+    "age": "23",
+    "address": "gulgerge"
+  },
+  {
+    "id": 1726344199883,
+    "name": "Ali",
+    "email": "Ali@gmail.com",
+    "age": "16",
+    "address": "Narali"
+  },
+  {
+    "id": 1726345481834,
+    "name": "Shazaib1",
+    "email": "Shazaib@gmail.com",
+    "age": "23",
+    "address": "Taramri"
+  },
+  {
+    "id": 1726346835740,
+    "name": "Hamza bahi",
+    "email": "hamza@gmail.com",
+    "age": "22",
+    "address": "Chakwal"
+  },
+  {
+    "id": 1726768981524,
+    "name": "Abdullah",
+    "email": "Abdullah@gmail.com",
+    "age": "22",
+    "address": "Chakwal"
+  }
+]

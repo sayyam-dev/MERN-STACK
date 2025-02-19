@@ -1,0 +1,28 @@
+. we used app.use for middleware, it will call in every api test. like cors and bodyparser. we can call app.use api everytime but we use get api one time. 
+. Error Handling middleware
+
+. Refresh Token : When Access Token gone Expires then Refresh Token help to take another Access Token.
+
+. The Access Token is store in database and we store the Refresh Token in database and cookies part of browssor in fontend. know we storing the RefreshToken in database then we can update the schema also.
+
+. Simple change the name of Token in login sction to AccessToken and creating a Refresh Token also.
+. we can make a new variable in .env file of RefreshToken key.
+
+In These 3 line's , in 1 line we can access the refreshToken , then in second line we can save it into database and in 3 line we can save the refreshToken in cookie of browssor from backend.
+1: existingUser.refreshToken = refreshToken;
+2: await existingUser.save(); 
+3: res.cookie('refreshToken',refreshToken,{httpOnly : true, path : '/refreshToken'}).
+
+
+npm install cookie-parser
+
+
+
+
+
+
+
+
+
+
+

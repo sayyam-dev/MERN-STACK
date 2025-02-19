@@ -1,0 +1,5 @@
+npm i express
+npm i body-parser -- it send data from frondend to backend and viceversa
+npm i dotenv
+npm i cors
+npm i mongoose -- its allow to us to  connect nodejs to mongodb

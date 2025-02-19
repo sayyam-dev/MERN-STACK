@@ -1,0 +1,28 @@
+** CORS (Cross-Origin Resource Sharing) in Backends **
+CORS is a security feature implemented by browsers to prevent malicious websites from making requests to a different domain than the one that served the web page. It controls how resources on a server can be accessed by web pages from a different origin (domain, protocol, or port).
+In the context of backends, CORS is important because:
+By default, browsers block cross-origin HTTP requests.
+CORS allows servers to specify who can access their resources, what HTTP methods are allowed (GET, POST, etc.), and what headers can be included in the requests.const express = require('express');
+const cors = require('cors');
+const app = express();
+
+app.use(cors()); // Enable CORS for all requests
+
+app.get('/data', (req, res) => {
+  res.json({ message: 'This is a CORS-enabled endpoint' });
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+** body-parser **
+Body-parser is middleware in Node.js/Express used to parse incoming request bodies in various formats (e.g., JSON, URL-encoded form data) so that the data can be easily accessed from the req.body object in the request.
+
+Express used to require body-parser as a separate package, but since Express 4.16+, it has built-in body-parsing functionality, so you don't need to install body-parser separately. However, if you're using an older version of Express or prefer body-parser, you can use it like this:  const bodyParser = require('body-parser');
+app.use(bodyParser.json()); // Parse JSON-formatted request bodies
