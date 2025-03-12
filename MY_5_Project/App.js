@@ -3,7 +3,7 @@ const app = express();
 const port = 8000;
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const User = require('./MODELS/UserSchema');
+const User = require('./MODELS/UserSchema');  
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt')
@@ -180,7 +180,7 @@ function authenticateToken(req,res,next) {
     }
 }
 
-// Geting specfic user id Api
+// Geting specfic user id Api 
 app.get('/getProfile', authenticateToken ,async(req,res)=>{
     const {id} = req.body;
     const user = await User.findById(id);

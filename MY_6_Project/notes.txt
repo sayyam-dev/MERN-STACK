@@ -1,1 +1,2 @@
+. Project 0 database is used password is user123.
 . Today we connecting Node.js Backend with FrontEnd React.
